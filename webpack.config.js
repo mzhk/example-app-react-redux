@@ -14,10 +14,26 @@ module.exports = {
       {
         test: /\.(js|jsx)$/,
         use: 'babel-loader'
+      },
+      {
+        test: /\.css$/,
+        use: [
+           'style-loader',
+           'css-loader'
+        ]
       }
     ]
   },
+  resolve: {
+    extensions: ['.js', '.jsx']
+  },
+  devtool: 'inline-source-map',
+  devServer: {
+    contentBase: './dist',
+    hot: true
+  },
   plugins: [
+    new webpack.HotModuleReplacementPlugin(),
     new webpack.ProgressPlugin(),
     new HtmlWebpackPlugin({template: './src/index.html'})
   ]

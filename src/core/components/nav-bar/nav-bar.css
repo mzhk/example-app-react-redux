@@ -1,0 +1,16 @@
+
+.nav-bar-container {
+	margin-bottom: 1em;
+	padding: 0.5em;
+	background: antiquewhite;
+}
+.nav-bar-item {
+	margin: 2em;
+	color: blue;
+	background: burlywood;
+}
+
+.nav-bar-item-right {
+	float: right;
+	padding-right: 0.5em;
+}
