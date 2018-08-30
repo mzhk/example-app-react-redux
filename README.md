@@ -1,20 +1,20 @@
 # example-app-react-redux
 Minimal example app - react, redux, babel 7, webpack 4
 
-## Usage
+## usage
+```bash
+git clone https://github.com/mzhk/example-app-react-redux.git
+cd example-app-react-redux
+npm install
+```
 
-     git clone https://github.com/mzhk/example-app-react-redux.git
-     cd example-app-react-redux
-     npm install
+## dev mode
+```bash
+npm run start
+open http://localhost:8080/
+```
 
-
-## Dev mode 
-
-    npm run start
-    open http://localhost:8080/
-  
-
-## Build 
-
-    npm run build
-
+## build
+```bash
+npm run build
+```
