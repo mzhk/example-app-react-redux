@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import "./nav-bar.css";
+import "./nav-bar.scss";
 import LangSwitch from "../lang-switch/lang-switch";
 
 
