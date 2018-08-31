@@ -1,11 +1,14 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const webpack = require('webpack');
 const path = require('path');
+const ROOT_PATH = path.resolve(__dirname);
+
 
 module.exports = {
+  devtool: process.env.NODE_ENV === 'production' ? '' : 'inline-source-map',
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(ROOT_PATH, 'dist'),
     publicPath: '/',
     filename: 'bundle.js'
   },
@@ -28,10 +31,10 @@ module.exports = {
   resolve: {
     extensions: ['.js', '.jsx']
   },
-  devtool: 'inline-source-map',
   devServer: {
     contentBase: './dist',
-    hot: true
+    hot: true,
+    historyApiFallback: true
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
