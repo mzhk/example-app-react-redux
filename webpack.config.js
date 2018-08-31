@@ -36,6 +36,9 @@ module.exports = {
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.ProgressPlugin(),
-    new HtmlWebpackPlugin({template: './src/index.html'})
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      favicon: './src/favicon.ico'
+    })
   ]
 };
