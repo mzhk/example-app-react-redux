@@ -12,7 +12,6 @@ class MovieCreatorWithStore extends Component {
   }
 
   handleClick() {
-    console.log('handle click: ' + this.movieInput.current.value);
     this.props.movieActions.addMovie(this.movieInput.current.value);
     this.movieInput.current.value = '';
   }

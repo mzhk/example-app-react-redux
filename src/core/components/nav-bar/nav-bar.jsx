@@ -6,7 +6,7 @@ import LangSwitch from '../lang-switch/lang-switch';
 
 const NavBar = () => (
   <div className='nav-bar-container'>
-    <Link className='nav-bar-item' to='/'>Home</Link>
+    <Link className='nav-bar-item' to='/'>Graphics Overview</Link>
     <Link className='nav-bar-item' to='/movie'>Movies</Link>
     <Link className='nav-bar-item' to='/moviestore'>Movies With Store</Link>
     <Link className='nav-bar-item' to='/about'>About</Link>
